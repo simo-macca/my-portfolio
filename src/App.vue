@@ -1,18 +1,33 @@
 <script setup>
-import { RouterView } from 'vue-router'
+import AboutView from '@/views/AboutView.vue'
+import SkillsView from '@/views/SkillsView.vue'
+import ProjectsView from '@/views/ProjectsView.vue'
+import ContactView from '@/views/ContactView.vue'
+import FooterComponent from '@/components/FooterComponent.vue'
+import NavbarComponent from '@/components/NavbarComponent.vue'
+import HomeView from '@/views/HomeView.vue'
+import WorkInProgress from '@/views/WorkInProgress.vue'
 </script>
 
 <template>
-  <header>
-    <div class="w-full">
-      <nav class="mx-auto flex w-full items-center justify-evenly p-4">
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
-    </div>
+  <header
+    class="sticky top-0 z-50 w-full border-b border-b-gray-800 bg-gray-900/80 backdrop-blur-md"
+  >
+    <NavbarComponent />
   </header>
 
-  <RouterView />
-</template>
+  <main class="mx-auto px-4 sm:px-6 lg:px-8">
+    <HomeView class="" />
 
-<style scoped></style>
+    <!-- <AboutView id="about" class="pt-25" /> -->
+
+    <!-- <SkillsView id="skills" class="pt-25" /> -->
+
+    <!-- <ProjectsView id="projects" class="pt-25" /> -->
+
+    <!-- <ContactView id="contact" class="pt-25" /> -->
+  </main>
+  <WorkInProgress id="work" />
+
+  <FooterComponent />
+</template>

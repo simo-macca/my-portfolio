@@ -34,3 +34,6 @@ coverage
 
 # Vitest
 __screenshots__/
+
+# to be removed
+notes.vue
