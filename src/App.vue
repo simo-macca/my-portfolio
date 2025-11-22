@@ -19,13 +19,13 @@ import WorkInProgress from '@/views/WorkInProgress.vue'
   <main class="mx-auto px-4 sm:px-6 lg:px-8">
     <HomeView class="" />
 
-    <!-- <AboutView id="about" class="pt-25" /> -->
+    <AboutView id="about" />
 
-    <!-- <SkillsView id="skills" class="pt-25" /> -->
+    <!-- <SkillsView id="skills" /> -->
 
-    <!-- <ProjectsView id="projects" class="pt-25" /> -->
+    <!-- <ProjectsView id="projects" /> -->
 
-    <!-- <ContactView id="contact" class="pt-25" /> -->
+    <!-- <ContactView id="contact" /> -->
   </main>
   <WorkInProgress id="work" />
 

@@ -14,7 +14,7 @@ import IconLogoPortfolio from '@/components/icons/IconLogoPortfolio.vue'
         class="hidden sm:flex sm:items-center sm:gap-6 lg:absolute lg:start-1/2 lg:top-1/2 lg:-translate-1/2"
       >
         <a
-          href="#work"
+          href="#about"
           class="px-3 py-2 font-medium text-gray-400 transition-colors hover:text-gray-100"
           >About</a
         >
