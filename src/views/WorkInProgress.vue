@@ -108,10 +108,10 @@ onUnmounted(() => {
       <div class="mx-auto max-w-md">
         <div class="h-2 overflow-hidden rounded-full bg-white/10 backdrop-blur-sm">
           <div
-            class="h-full w-4/12 animate-pulse rounded-full bg-linear-to-r from-purple-500 via-pink-500 to-blue-500"
+            class="h-full w-3/5 animate-pulse rounded-full bg-linear-to-r from-purple-500 via-pink-500 to-blue-500"
           ></div>
         </div>
-        <p class="mt-2 text-sm text-gray-500">Approximately 30% done (probably)</p>
+        <p class="mt-2 text-sm text-gray-500">Approximately 60% done (probably)</p>
       </div>
 
       <div class="mt-12 text-sm text-gray-500">
