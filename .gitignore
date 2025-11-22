@@ -36,4 +36,5 @@ coverage
 __screenshots__/
 
 # to be removed
-notes.vue
+colorPalette.html
+example.html
