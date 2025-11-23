@@ -11,13 +11,13 @@
     </p>
     <div class="flex w-full items-center justify-between gap-4 sm:w-100 sm:min-w-min">
       <a
-        href="#work"
-        class="flex max-h-15 w-1/2 items-center justify-center rounded-lg bg-cyan-500 py-3 text-white shadow-lg transition-colors hover:bg-cyan-600 sm:px-6 sm:text-xl"
+        href="#contact"
+        class="flex max-h-15 w-1/2 items-center justify-center rounded-lg bg-cyan-500 py-3 text-white shadow-lg hover:bg-cyan-600 sm:px-6 sm:text-xl"
         >Get in Touch</a
       >
       <a
         href="#work"
-        class="flex max-h-15 w-1/2 items-center justify-center rounded-lg bg-gray-800 py-3 text-white shadow-lg transition-colors hover:bg-gray-700 sm:px-6 sm:text-xl"
+        class="flex max-h-15 w-1/2 items-center justify-center rounded-lg bg-gray-800 py-3 text-white shadow-lg hover:bg-gray-700 sm:px-6 sm:text-xl"
         >View My Work</a
       >
     </div>
