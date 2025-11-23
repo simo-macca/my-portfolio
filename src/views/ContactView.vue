@@ -1,7 +1,61 @@
-<script setup></script>
+<script setup>
+import { Mail, MapPin } from 'lucide-vue-next'
+import GitHubComponent from '@/components/GitHubComponent.vue'
+import LinkedinComponent from '@/components/LinkedinComponent.vue'
+import ContactCardComponent from '@/components/ContactCardComponent.vue'
+import ContactFormComponent from '@/components/ContactFormComponent.vue'
+
+const contactMethods = [
+  {
+    icon: Mail,
+    title: 'Email',
+    value: 'simone.maccario04@gmail.com',
+    link: 'mailto:simone.maccario04@gmail.com',
+    description: 'Drop me an email anytime',
+  },
+  {
+    icon: GitHubComponent,
+    title: 'GitHub',
+    value: 'github.com/simo-macca',
+    link: 'https://github.com/simo-macca',
+    description: 'Check out my repositories',
+  },
+  {
+    icon: LinkedinComponent,
+    title: 'LinkedIn',
+    value: 'linkedin.com/in/simone-maccario-70a339362',
+    link: 'https://linkedin.com/in/simone-maccario-70a339362',
+    description: "Let's connect professionally",
+  },
+  {
+    icon: MapPin,
+    title: 'Location',
+    value: 'Como, Italy',
+    link: 'https://maps.app.goo.gl/pxusHfuBjvR6uA3j7',
+    description: 'Available for remote work',
+  },
+]
+</script>
 
 <template>
-  <section>
-    <h1>This is a contact page</h1>
+  <section class="mt-30 flex min-h-dvh flex-col items-center justify-center gap-4 pt-16">
+    <div class="mb-8 text-center">
+      <h2 class="mb-8 text-4xl font-bold">
+        Let's Work <span class="text-cyan-500">Together</span>
+      </h2>
+      <p class="max-w-2xl px-4 text-justify text-xl text-gray-400 sm:my-4 md:text-center">
+        I'm currently seeking my first professional role as a Full-Stack Developer. Feel free to
+        reach out for opportunities, collaborations, or just to say hi!
+      </p>
+    </div>
+
+    <div class="grid gap-8 max-sm:w-full md:grid-cols-5">
+      <div
+        class="grid content-start gap-4 px-2 max-sm:w-full sm:col-span-2 sm:grid-cols-2 md:grid-cols-1"
+      >
+        <ContactCardComponent :methods="contactMethods" />
+      </div>
+      <ContactFormComponent />
+    </div>
   </section>
 </template>

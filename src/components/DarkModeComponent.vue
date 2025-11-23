@@ -5,7 +5,7 @@ const theme = useThemeStore()
 </script>
 
 <template>
-  <button class="rounded-full p-2 transition-colors hover:bg-gray-800">
+  <button class="rounded-full p-2 hover:bg-gray-800">
     <!-- Sun Icon (for Dark Mode) -->
     <svg
       v-if="theme.isDark"

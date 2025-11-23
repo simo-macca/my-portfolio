@@ -25,7 +25,7 @@ import WorkInProgress from '@/views/WorkInProgress.vue'
 
     <ProjectsView id="projects" />
 
-    <!-- <ContactView id="contact" /> -->
+    <ContactView id="contact" />
   </main>
   <WorkInProgress id="work" />
 

@@ -13,24 +13,10 @@ import IconLogoPortfolio from '@/components/icons/IconLogoPortfolio.vue'
       <div
         class="hidden sm:flex sm:items-center sm:gap-6 lg:absolute lg:start-1/2 lg:top-1/2 lg:-translate-1/2"
       >
-        <a
-          href="#about"
-          class="px-3 py-2 font-medium text-gray-400 transition-colors hover:text-gray-100"
-          >About</a
-        >
-        <a
-          href="#skills"
-          class="px-3 py-2 font-medium text-gray-400 transition-colors hover:text-gray-100"
-          >Skills</a
-        >
-        <a
-          href="#projects"
-          class="px-3 py-2 font-medium text-gray-400 transition-colors hover:text-gray-100"
-          >Projects</a
-        >
-        <a
-          href="#work"
-          class="px-3 py-2 font-medium text-gray-400 transition-colors hover:text-gray-100"
+        <a href="#about" class="px-3 py-2 font-medium text-gray-400 hover:text-gray-100">About</a>
+        <a href="#skills" class="px-3 py-2 font-medium text-gray-400 hover:text-gray-100">Skills</a>
+        <a href="#projects" class="px-3 py-2 font-medium text-gray-400 hover:text-gray-100">Projects</a>
+        <a href="#contact" class="px-3 py-2 font-medium text-gray-400 hover:text-gray-100"
           >Contact</a
         >
       </div>
