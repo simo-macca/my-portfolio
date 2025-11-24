@@ -27,7 +27,6 @@ import WorkInProgress from '@/views/WorkInProgress.vue'
 
     <ContactView id="contact" />
   </main>
-  <WorkInProgress id="work" />
 
   <FooterComponent />
 </template>
