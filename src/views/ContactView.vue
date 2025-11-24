@@ -51,11 +51,11 @@ const contactMethods = [
 
     <div class="grid gap-8 max-sm:w-full md:grid-cols-5">
       <div
-        class="grid content-start gap-4 px-2 max-sm:w-full sm:col-span-2 sm:grid-cols-2 md:grid-cols-1"
+        class="grid h-full content-stretch gap-4 px-2 max-sm:w-full sm:col-span-2 sm:grid-cols-2 md:grid-cols-1"
       >
         <ContactCardComponent :methods="contactMethods" />
       </div>
-      <ContactFormComponent />
+      <ContactFormComponent class="mx-2 sm:col-span-2" />
     </div>
   </section>
 </template>
