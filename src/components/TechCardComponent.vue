@@ -32,7 +32,7 @@ const responsiveSpans = [
   <div
     :class="[
       responsiveSpans[props.index],
-      'group flex flex-col rounded-2xl border border-slate-800 p-6 transition-all hover:shadow-xl',
+      'group flex flex-col rounded-2xl border border-slate-800 bg-slate-800 p-6 inset-shadow-sm inset-shadow-slate-200',
     ]"
   >
     <h3 class="mb-4 text-xl font-bold text-blue-600 dark:text-blue-400">

@@ -6,7 +6,6 @@ import ContactView from '@/views/ContactView.vue'
 import FooterComponent from '@/components/FooterComponent.vue'
 import NavbarComponent from '@/components/NavbarComponent.vue'
 import HomeView from '@/views/HomeView.vue'
-import WorkInProgress from '@/views/WorkInProgress.vue'
 </script>
 
 <template>
