@@ -39,7 +39,7 @@ const contactMethods = [
 
 <template>
   <section class="flex min-h-dvh flex-col items-center justify-center gap-4 sm:mt-30 sm:pt-25">
-    <div class="mb-8 text-center">
+    <div class="mb-8 text-center" v-motion-slide-visible-once-bottom>
       <h2 class="mb-8 text-4xl font-bold">
         Let's Work <span class="text-app-accent">Together</span>
       </h2>
@@ -53,7 +53,11 @@ const contactMethods = [
       <div class="grid h-full content-stretch gap-4 sm:col-span-2 sm:grid-cols-2 md:grid-cols-1">
         <ContactCardComponent :methods="contactMethods" />
       </div>
-      <ContactFormComponent class="px-4 py-8 sm:col-span-2" />
+      <ContactFormComponent
+        class="px-4 py-8 sm:col-span-2"
+        v-motion-slide-visible-once-right
+        :delay="400"
+      />
     </div>
   </section>
 </template>

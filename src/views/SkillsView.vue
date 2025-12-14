@@ -38,12 +38,20 @@ const data = [
     <div class="mx-auto max-w-6xl">
       <h2
         class="mb-16 text-center text-4xl font-extrabold tracking-tight text-app-heading sm:text-5xl"
+        v-motion-fade-visible-once
       >
         My Tech Stack
       </h2>
 
       <div class="grid grid-cols-12 gap-6">
-        <TechCardComponent v-for="(d, index) in data" :key="d.topic" v-bind="d" :index="index" />
+        <TechCardComponent
+          v-for="(d, index) in data"
+          :key="d.topic"
+          v-bind="d"
+          :index="index"
+          v-motion-slide-visible-once-bottom
+          :delay="index * 100"
+        />
       </div>
     </div>
   </section>

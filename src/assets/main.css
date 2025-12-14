@@ -53,5 +53,6 @@
 @layer base {
   body {
     @apply bg-app-bg text-app-text transition-all duration-300 ease-in-out;
+    scroll-behavior: smooth;
   }
 }

@@ -1,7 +1,8 @@
 <script setup>
-import { ref } from 'vue'
+import { computed, ref } from 'vue'
 import SendButtonComponent from '@/components/SendButtonComponent.vue'
 import VueHcaptcha from '@hcaptcha/vue3-hcaptcha'
+import { useThemeStore } from '@/stores/ThemeStore.js'
 
 const WEB3FORMS_ACCESS_KEY = import.meta.env.VITE_WEB3FORMS_KEY
 const HCAPTCHA_SITEKEY = import.meta.env.VITE_HCAPTCHA_SITEKEY
@@ -11,6 +12,9 @@ const message = ref('')
 const hCaptchaToken = ref(null)
 const hCaptchaMessage = ref(false)
 const btn = ref()
+const theme = useThemeStore()
+
+const captchaTheme = computed(() => (theme.isDark ? 'dark' : 'light'))
 
 /* captcha handlers */
 const onVerify = (token) => {
@@ -103,9 +107,10 @@ const submitForm = async () => {
     </div>
 
     <VueHcaptcha
+      :key="captchaTheme"
       :sitekey="HCAPTCHA_SITEKEY"
       class="h-captcha mt-4 flex justify-center"
-      data-theme="dark"
+      :data-theme="captchaTheme"
       @verify="onVerify"
     />
 

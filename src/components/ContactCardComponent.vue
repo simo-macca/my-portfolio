@@ -14,6 +14,8 @@ const props = defineProps({
     v-for="(method, index) in props.methods"
     :key="index"
     class="h-full min-w-0 rounded-lg bg-app-card p-6 inset-shadow-sm inset-shadow-app-accent-subtle hover:inset-shadow-app-accent-hover"
+    v-motion-slide-visible-once-left
+    :delay="index * 200"
   >
     <a
       :href="method.link"

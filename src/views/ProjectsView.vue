@@ -5,16 +5,20 @@ import { Rocket } from 'lucide-vue-next'
 <template>
   <section id="projects" class="flex min-h-dvh flex-col items-center justify-center px-4 py-20">
     <div class="max-w-3xl text-center">
-      <div class="relative mb-8 flex justify-center">
+      <div class="relative mb-8 flex justify-center" v-motion-pop-visible-once>
         <Rocket class="relative z-10 h-16 w-16 text-app-accent" />
         <div class="absolute -inset-4 animate-pulse rounded-full bg-app-accent/20 blur-xl"></div>
       </div>
 
-      <h2 class="mb-6 text-4xl font-extrabold tracking-tight text-app-heading sm:text-5xl">
+      <h2
+        class="mb-6 text-4xl font-extrabold tracking-tight text-app-heading sm:text-5xl"
+        v-motion-slide-visible-once-bottom
+        :delay="200"
+      >
         Projects
       </h2>
 
-      <div class="space-y-6">
+      <div class="space-y-6" v-motion-fade-visible-once :delay="400">
         <p class="text-xl text-app-text sm:text-2xl">
           I'm currently <span class="font-medium text-app-accent-text">engineering</span> new
           personal projects that I can't wait to share.
