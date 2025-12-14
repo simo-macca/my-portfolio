@@ -1,5 +1,5 @@
 <script setup>
-import { Rocket } from 'lucide-vue-next' // Using lucide icons already in your dependencies
+import { Rocket } from 'lucide-vue-next'
 </script>
 
 <template>
