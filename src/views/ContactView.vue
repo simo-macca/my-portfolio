@@ -38,7 +38,7 @@ const contactMethods = [
 </script>
 
 <template>
-  <section class="mt-30 flex min-h-dvh flex-col items-center justify-center gap-4 pt-16">
+  <section class="flex min-h-dvh flex-col items-center justify-center gap-4 sm:mt-30 sm:pt-25">
     <div class="mb-8 text-center">
       <h2 class="mb-8 text-4xl font-bold">
         Let's Work <span class="text-cyan-500">Together</span>

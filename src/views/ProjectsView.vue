@@ -3,10 +3,7 @@ import { Rocket } from 'lucide-vue-next'
 </script>
 
 <template>
-  <section
-    id="projects"
-    class="flex min-h-dvh flex-col items-center justify-start px-4 py-20 sm:justify-center"
-  >
+  <section id="projects" class="flex min-h-dvh flex-col items-center justify-center px-4 py-20">
     <div class="max-w-3xl text-center">
       <div class="relative mb-8 flex justify-center">
         <Rocket class="relative z-10 h-16 w-16 text-cyan-500" />

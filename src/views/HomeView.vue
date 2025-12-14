@@ -16,7 +16,7 @@
         >Get in Touch</a
       >
       <a
-        href="#work"
+        href="#projects"
         class="flex max-h-15 w-1/2 items-center justify-center rounded-lg bg-gray-800 py-3 text-white shadow-lg hover:bg-gray-700 sm:px-6 sm:text-xl"
         >View My Work</a
       >

@@ -1,14 +1,29 @@
 <script setup>
 import { ref } from 'vue'
 import SendButtonComponent from '@/components/SendButtonComponent.vue'
+import VueHcaptcha from '@hcaptcha/vue3-hcaptcha'
 
-const WEB3FORMS_ACCESS_KEY = 'a13fa86f-cd47-4d15-aa68-62f0e8805dcd'
+const WEB3FORMS_ACCESS_KEY = import.meta.env.VITE_WEB3FORMS_KEY
+const HCAPTCHA_SITEKEY = import.meta.env.VITE_HCAPTCHA_SITEKEY
 const name = ref('')
 const email = ref('')
 const message = ref('')
+const hCaptchaToken = ref(null)
+const hCaptchaMessage = ref(false)
 const btn = ref()
 
+/* captcha handlers */
+const onVerify = (token) => {
+  hCaptchaToken.value = token
+}
+
 const submitForm = async () => {
+  if (!hCaptchaToken.value) {
+    hCaptchaMessage.value = true
+    throw new Error('Please complete the captcha')
+  }
+  hCaptchaMessage.value = false
+
   await btn.value.submit(async () => {
     const resp = await fetch('https://api.web3forms.com/submit', {
       method: 'POST',
@@ -21,20 +36,23 @@ const submitForm = async () => {
         name: name.value,
         email: email.value,
         message: message.value,
+        subject: 'Someone wants to contact me',
+        from_name: 'My portfolio website',
+        'h-captcha-response': hCaptchaToken.value,
       }),
     })
 
     const result = await resp.json()
 
     if (!result.success) {
-      throw new Error('Web3Forms failed')
+      throw new Error(result.message || 'Submission failed')
     }
   })
 
-  // optional: clear inputs on success
   name.value = ''
   email.value = ''
   message.value = ''
+  hCaptchaToken.value = null
 }
 </script>
 
@@ -72,7 +90,7 @@ const submitForm = async () => {
         />
       </div>
       <div>
-        <label for="message" class="block text-sm font-medium text-gray-400">Your name</label>
+        <label for="message" class="block text-sm font-medium text-gray-400">Your message</label>
         <textarea
           v-model="message"
           id="message"
@@ -82,6 +100,17 @@ const submitForm = async () => {
           placeholder="Tell me about your project or opportunity..."
         />
       </div>
+    </div>
+
+    <VueHcaptcha
+      :sitekey="HCAPTCHA_SITEKEY"
+      class="h-captcha mt-4 flex justify-center"
+      data-theme="dark"
+      @verify="onVerify"
+    />
+
+    <div v-if="hCaptchaMessage" class="mt-2 w-full text-center text-red-500">
+      Please complete the captcha
     </div>
 
     <SendButtonComponent ref="btn" />
