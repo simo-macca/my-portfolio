@@ -41,9 +41,9 @@ const contactMethods = [
   <section class="flex min-h-dvh flex-col items-center justify-center gap-4 sm:mt-30 sm:pt-25">
     <div class="mb-8 text-center">
       <h2 class="mb-8 text-4xl font-bold">
-        Let's Work <span class="text-cyan-500">Together</span>
+        Let's Work <span class="text-app-accent">Together</span>
       </h2>
-      <p class="max-w-2xl px-4 text-justify text-xl text-gray-400 sm:my-4 md:text-center">
+      <p class="max-w-2xl px-4 text-justify text-xl text-app-text sm:my-4 md:text-center">
         I'm currently seeking my first professional role as a Full-Stack Developer. Feel free to
         reach out for opportunities, collaborations, or just to say hi!
       </p>

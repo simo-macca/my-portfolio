@@ -8,10 +8,10 @@
         <img
           src="../components/icons/my_profile.jpg"
           alt="photo profile"
-          class="h-60 w-60 rounded-full border-4 border-cyan-500 bg-gray-800 object-cover shadow-xl"
+          class="h-60 w-60 rounded-full border-4 border-app-accent bg-app-card object-cover shadow-xl"
         />
       </div>
-      <div class="flex flex-col gap-y-3 px-3 text-justify text-gray-400 md:col-span-2 md:mr-20">
+      <div class="flex flex-col gap-y-3 px-3 text-justify text-app-text md:col-span-2 md:mr-20">
         <p>
           Hello! I'm a final-year Computer Science student at USI. My journey in tech started with a
           curiosity for how things work, and it's evolved into a passion for developing solutions
@@ -19,7 +19,7 @@
         </p>
         <p>
           As a developer, I enjoy the full spectrum of development, from designing intuitive user
-          interfaces with <strong class="text-gray-100">Vue.js and Tailwind</strong> (like this
+          interfaces with <strong class="text-app-heading">Vue.js and Tailwind</strong> (like this
           site!) to engineering robust back-end systems with Node.js.
         </p>
         <p>

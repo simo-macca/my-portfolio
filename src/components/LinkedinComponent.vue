@@ -2,7 +2,7 @@
   <a
     href="https://www.linkedin.com/in/simone-maccario-70a339362/"
     target="_blank"
-    class="text-gray-400 hover:text-cyan-600"
+    class="text-app-text hover:text-app-accent-hover"
   >
     <span class="sr-only">LinkedIn</span>
     <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">

@@ -5,10 +5,14 @@ import { createPinia } from 'pinia'
 
 import App from './App.vue'
 import router from './router'
+import { useThemeStore } from '@/stores/ThemeStore.js'
 
 const app = createApp(App)
 
 app.use(createPinia())
 app.use(router)
+
+const themeStore = useThemeStore()
+themeStore.applyTheme()
 
 app.mount('#app')

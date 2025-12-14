@@ -5,11 +5,15 @@ const theme = useThemeStore()
 </script>
 
 <template>
-  <button class="rounded-full p-2 hover:bg-gray-800">
+  <button
+    @click="theme.toggle()"
+    class="rounded-full p-2 hover:bg-app-card"
+    aria-label="Toggle dark mode"
+  >
     <!-- Sun Icon (for Dark Mode) -->
     <svg
       v-if="theme.isDark"
-      class="h-6 w-6 text-cyan-500"
+      class="h-6 w-6 text-app-accent"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 24 24"
       stroke="currentColor"
@@ -24,7 +28,7 @@ const theme = useThemeStore()
     <!-- Moon Icon (for Light Mode) -->
     <svg
       v-else
-      class="h-6 w-6 text-cyan-500"
+      class="h-6 w-6 text-app-accent"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 24 24"
       stroke="currentColor"

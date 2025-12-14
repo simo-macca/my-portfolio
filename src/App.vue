@@ -9,9 +9,7 @@ import HomeView from '@/views/HomeView.vue'
 </script>
 
 <template>
-  <header
-    class="sticky top-0 z-50 w-full border-b border-b-gray-800 bg-gray-900/80 backdrop-blur-md"
-  >
+  <header class="sticky top-0 z-50 w-full border-b border-b-app-card bg-app-bg/80 backdrop-blur-md">
     <NavbarComponent />
   </header>
 

@@ -1,5 +1,9 @@
 <template>
-  <a href="https://github.com/simo-macca" target="_blank" class="text-gray-400 hover:text-cyan-600">
+  <a
+    href="https://github.com/simo-macca"
+    target="_blank"
+    class="text-app-text hover:text-app-accent-hover"
+  >
     <span class="sr-only">GitHub</span>
     <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
       <path
