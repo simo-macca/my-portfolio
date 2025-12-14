@@ -24,7 +24,7 @@ import IconLogoPortfolio from '@/components/icons/IconLogoPortfolio.vue'
           >Skills</a
         >
         <a
-          href="#work"
+          href="#projects"
           class="px-3 py-2 font-medium text-gray-400 transition-colors hover:text-gray-100"
           >Projects</a
         >

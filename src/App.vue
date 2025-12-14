@@ -23,7 +23,7 @@ import WorkInProgress from '@/views/WorkInProgress.vue'
 
     <SkillsView id="skills" />
 
-    <!-- <ProjectsView id="projects" /> -->
+    <ProjectsView id="projects" />
 
     <!-- <ContactView id="contact" /> -->
   </main>
