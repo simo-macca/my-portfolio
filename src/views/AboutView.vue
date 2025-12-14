@@ -1,7 +1,7 @@
 <script setup></script>
 
 <template>
-  <section class="flex min-h-dvh flex-col items-center justify-center gap-4">
+  <section class="flex min-h-dvh flex-col items-center sm:justify-center justify-start gap-4">
     <h2 class="mb-12 text-center text-4xl font-bold">About me</h2>
     <div class="grid w-full grid-cols-1 items-center gap-8 md:grid-cols-3">
       <div class="flex h-full items-center justify-center md:col-span-1">
@@ -13,9 +13,9 @@
       </div>
       <div class="flex flex-col gap-y-3 px-3 text-justify text-gray-400 md:col-span-2 md:mr-20">
         <p>
-          Hello! I'm a final-year Computer Science student at USI. My journey in tech
-          started with a curiosity for how things work, and it's evolved into a passion for
-          developing solutions that are both smart and easy to use.
+          Hello! I'm a final-year Computer Science student at USI. My journey in tech started with a
+          curiosity for how things work, and it's evolved into a passion for developing solutions
+          that are both smart and easy to use.
         </p>
         <p>
           As a developer, I enjoy the full spectrum of development, from designing intuitive user
