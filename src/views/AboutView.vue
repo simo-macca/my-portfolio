@@ -1,7 +1,7 @@
 <script setup></script>
 
 <template>
-  <section class="flex min-h-dvh flex-col items-center sm:justify-center justify-start gap-4">
+  <section class="flex min-h-dvh flex-col items-center justify-start gap-4 sm:justify-center">
     <h2 class="mb-12 text-center text-4xl font-bold">About me</h2>
     <div class="grid w-full grid-cols-1 items-center gap-8 md:grid-cols-3">
       <div class="flex h-full items-center justify-center md:col-span-1">

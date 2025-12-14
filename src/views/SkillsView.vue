@@ -34,7 +34,7 @@ const data = [
 </script>
 
 <template>
-  <section class="sm:mt-25 flex min-h-dvh flex-col items-center justify-center gap-4 sm:pt-16">
+  <section class="flex min-h-dvh flex-col items-center justify-center gap-4 sm:mt-25 sm:pt-16">
     <div class="mx-auto max-w-6xl">
       <h2
         class="mb-16 text-center text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl dark:text-white"
