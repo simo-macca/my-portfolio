@@ -27,7 +27,7 @@ const props = defineProps({
       />
       <div class="min-w-0 flex-1">
         <div class="mb-2 flex items-center gap-2">
-          <h3 class="font-semibold text-white group-hover:text-cyan-600">
+          <h3 class="line-clamp-1 font-semibold text-white group-hover:text-cyan-600">
             {{ method.title }}
           </h3>
           <ExternalLink class="h-4 w-4 text-gray-400 group-hover:text-cyan-600" />

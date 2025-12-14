@@ -59,7 +59,7 @@ const submitForm = async () => {
 <template>
   <form
     @submit.prevent="submitForm"
-    class="rounded-lg bg-gray-800 p-8 inset-shadow-sm inset-shadow-cyan-200 md:col-span-3"
+    class="rounded-lg bg-gray-800 inset-shadow-sm inset-shadow-cyan-200 sm:p-8 md:col-span-3"
   >
     <h2 class="mb-8 text-2xl font-semibold">Send me a message</h2>
     <div class="space-y-5">
