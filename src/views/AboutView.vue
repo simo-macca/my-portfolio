@@ -2,9 +2,7 @@
 
 <template>
   <section class="flex min-h-dvh flex-col items-center justify-start gap-4 sm:justify-center">
-    <h2 class="mb-12 text-center text-4xl font-bold" v-motion-slide-visible-once-bottom>
-      About me
-    </h2>
+    <h2 class="mb-12 text-center text-4xl font-bold" v-motion-fade-visible-once>About me</h2>
     <div class="grid w-full grid-cols-1 items-center gap-8 md:grid-cols-3">
       <div
         class="flex h-full items-center justify-center md:col-span-1"

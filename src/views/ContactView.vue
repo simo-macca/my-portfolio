@@ -39,7 +39,7 @@ const contactMethods = [
 
 <template>
   <section class="flex min-h-dvh flex-col items-center justify-center gap-4 sm:mt-30 sm:pt-25">
-    <div class="mb-8 text-center" v-motion-slide-visible-once-bottom>
+    <div class="mb-8 text-center" v-motion-fade-visible-once>
       <h2 class="mb-8 text-4xl font-bold">
         Let's Work <span class="text-app-accent">Together</span>
       </h2>

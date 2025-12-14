@@ -12,7 +12,7 @@ import { Rocket } from 'lucide-vue-next'
 
       <h2
         class="mb-6 text-4xl font-extrabold tracking-tight text-app-heading sm:text-5xl"
-        v-motion-slide-visible-once-bottom
+        v-motion-fade-visible-once
         :delay="200"
       >
         Projects
