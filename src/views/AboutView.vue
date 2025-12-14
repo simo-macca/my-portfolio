@@ -13,7 +13,7 @@
       </div>
       <div class="flex flex-col gap-y-3 px-3 text-justify text-gray-400 md:col-span-2 md:mr-20">
         <p>
-          Hello! I'm a final-year Computer Science student at [Your University]. My journey in tech
+          Hello! I'm a final-year Computer Science student at USI. My journey in tech
           started with a curiosity for how things work, and it's evolved into a passion for
           developing solutions that are both smart and easy to use.
         </p>
