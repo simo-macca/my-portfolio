@@ -19,7 +19,7 @@ import IconLogoPortfolio from '@/components/icons/IconLogoPortfolio.vue'
           >About</a
         >
         <a
-          href="#work"
+          href="#skills"
           class="px-3 py-2 font-medium text-gray-400 transition-colors hover:text-gray-100"
           >Skills</a
         >

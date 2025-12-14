@@ -21,7 +21,7 @@ import WorkInProgress from '@/views/WorkInProgress.vue'
 
     <AboutView id="about" />
 
-    <!-- <SkillsView id="skills" /> -->
+    <SkillsView id="skills" />
 
     <!-- <ProjectsView id="projects" /> -->
 
